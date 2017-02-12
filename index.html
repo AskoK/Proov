@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video player</title>
+    <link rel="stylesheet" href="css/styles.css"> </head>
+
+<body>
+    <div id="video-container">
+        <video id="video" width="100%">
+            <source src="video/video.mp4" type="video/mp4">
+            <source src="video/video.ogg" type="video/ogg"> </video>
+        <div id="video-controls">
+            <div id="progress">
+                <input type="range" id="seek-bar" min="0" max="100" value="0" class="range" /> </div>
+            <div id="control-buttons">
+                <button type="button" id="play-pause">
+                    <input type="image" src="icons/play-icon.png"> </button>
+                <div id="time">
+                    <div id="current">00:00</div>
+                    <div> / </div>
+                    <div id="duration">00:00</div>
+                </div>
+                <button type="button" id="mute">
+                    <input type="image" src="icons/volume-on-icon.png"> </button>
+                <button type="button" id="fullscreen">
+                    <input type="image" src="icons/fullscreen-icon.png"> </button>
+            </div>
+        </div>
+    </div>
+    <div id="captions"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="javascript.js"></script>
+</body>
+
+</html>
